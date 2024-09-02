@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Mathematics Program Survey</h2>
+      <p>Harap luangkan waktu sejenak untuk memberikan jawaban Anda. Tanggapan Anda akan membantu kami meningkatkan program.</p>
+
+      <form action="https://forms.gle/65gsKeErnmesLuJa7" method="POST">
+        <!-- Name -->
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="entry.1378617703" placeholder="John Doe" required />
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="entry.864679455" placeholder="john.doe@example.com" required />
+
+        <!-- Age -->
+        <label for="age">Umur:</label>
+        <input type="number" id="age" name="entry.750403733" min="10" max="100" required />
+
+        <!-- Gender -->
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender" name="entry.1265526880" required>
+          <option value="" disabled selected>Pilih jenis kelamin anda</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+
+        <!-- Tahun Studi -->
+        <label for="year">Tahun Studi:</label>
+        <select id="year" name="entry.1840225211" required>
+          <option value="" disabled selected>Pilih tahun anda</option>
+          <option value="1">Tahun ke 1</option>
+          <option value="2">Tahun ke 2</option>
+          <option value="3">Tahun ke 3</option>
+          <option value="4">Tahun ke 4</option>
+        </select>
+
+        <!-- Bidang Favorit dalam Matematika -->
+        <label for="favorite-field">Bidang Favorit dalam Matematika:</label>
+        <select id="favorite-field" name="entry.135666092" required>
+          <option value="" disabled selected>Pilih bidang favorit Anda</option>
+          <option value="Aljabar">Aljabar</option>
+          <option value="Kalkulus">Kalkulus</option>
+          <option value="Geometri">Geometri</option>
+          <option value="Statistik">Statistik</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+
+        <!-- Tantangan Terbesar -->
+        <label for="challenge">Apa tantangan terbesar yang Anda hadapi dalam belajar Matematika?</label>
+        <textarea id="challenge" name="entry.909980153" rows="4" placeholder="Jelaskan tantangan terbesar Anda..." required></textarea>
+
+        <!-- Saran untuk Perbaikan -->
+        <label for="suggestions">Berikan saran untuk meningkatkan program:</label>
+        <textarea id="suggestions" name="entry.493992989" rows="4" placeholder="Saran Anda di sini..."></textarea>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
